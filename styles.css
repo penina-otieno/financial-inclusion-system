@@ -1,0 +1,99 @@
+/* GENERAL PAGE STYLING */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* NAVBAR */
+nav {
+    background: #004aad;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+nav a.btn {
+    background: #ffb703;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* LANDING PAGE HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: white;
+}
+
+.cta {
+    display: inline-block;
+    background: #004aad;
+    color: white;
+    padding: 12px 18px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* FORM STYLING */
+form {
+    width: 320px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #004aad;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #00367d;
+}
+
+/* DASHBOARD */
+.dashboard {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
