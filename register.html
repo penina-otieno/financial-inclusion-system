@@ -1,44 +1,91 @@
+register.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Register - FinTrack</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Financial Inclusion System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">💰 FinInclusion</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="register.html" class="nav-link active">Register</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav>
-    <h2>FinTrack</h2>
-</nav>
+    <div class="form-container">
+        <div class="form-wrapper">
+            <h1>Create Your Account</h1>
+            <form id="registerForm" class="form">
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
 
-<form onsubmit="return validateRegister()">
-    <h3>Create Account</h3>
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <span class="error-message" id="firstNameError"></span>
+                </div>
 
-    <label>Email</label>
-    <input type="email" id="email" required>
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <span class="error-message" id="lastNameError"></span>
+                </div>
 
-    <label>First Name</label>
-    <input type="text" id="fname" required>
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="hint-message" id="passwordHint">Min 8 characters, include uppercase, lowercase, and numbers</span>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
 
-    <label>Last Name</label>
-    <input type="text" id="lname" required>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password *</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
 
-    <label>Password</label>
-    <input type="password" id="password" required>
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male" required>
+                            Male
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female" required>
+                            Female
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="other" required>
+                            Other
+                        </label>
+                    </div>
+                    <span class="error-message" id="genderError"></span>
+                </div>
 
-    <label>Gender</label>
-    <select id="gender">
-        <option>Male</option>
-        <option>Female</option>
-        <option>Prefer not to say</option>
-    </select>
+                <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+            </form>
 
-    <button type="submit">Register</button>
+            <p class="form-footer">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
 
-    <p style="text-align:center; margin-top:10px;">
-        Already have an account? <a href="login.html">Login</a>
-    </p>
-</form>
+    <footer class="footer">
+        <p>&copy; 2025 Financial Inclusion System. All rights reserved.</p>
+    </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

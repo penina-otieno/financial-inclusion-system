@@ -1,43 +1,128 @@
+dashboard.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dashboard - FinTrack</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Financial Inclusion System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">💰 FinInclusion</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+                <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav>
-    <h2>FinTrack</h2>
-    <div>Welcome, <span id="usernamePlaceholder"></span></div>
-</nav>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>Welcome, <span id="userNameDisplay">User</span>!</h1>
+            <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+        </div>
 
-<div class="dashboard">
-    <div class="card">
-        <h3>Budget Overview</h3>
-        <p>Total Budget: KES 20,000</p>
-        <p>Spent: KES 8,500</p>
-        <p>Remaining: KES 11,500</p>
+        <div class="dashboard-grid">
+            <!-- Budget Overview Widget -->
+            <div class="widget budget-widget">
+                <h2>📊 Budget Overview</h2>
+                <div class="widget-content">
+                    <div class="budget-item">
+                        <span class="budget-label">Monthly Income</span>
+                        <span class="budget-amount">$5,000</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">Total Expenses</span>
+                        <span class="budget-amount expense">$2,300</span>
+                    </div>
+                    <div class="budget-item highlight">
+                        <span class="budget-label">Remaining</span>
+                        <span class="budget-amount success">$2,700</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Transactions Widget -->
+            <div class="widget transactions-widget">
+                <h2>💳 Recent Transactions</h2>
+                <div class="widget-content">
+                    <table class="transactions-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nov 20, 2024</td>
+                                <td>Grocery Store</td>
+                                <td class="expense">-$85.50</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 19, 2024</td>
+                                <td>Salary Deposit</td>
+                                <td class="income">+$5,000</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 18, 2024</td>
+                                <td>Utility Bill</td>
+                                <td class="expense">-$120.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 17, 2024</td>
+                                <td>Restaurant</td>
+                                <td class="expense">-$45.75</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 16, 2024</td>
+                                <td>Digital Wallet Transfer</td>
+                                <td class="income">+$200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Financial Tips Widget -->
+            <div class="widget tips-widget">
+                <h2>💡 Financial Tips</h2>
+                <div class="widget-content">
+                    <div class="tips-tabs">
+                        <button class="tab-button active" data-tab="tip-1">Mobile Lending</button>
+                        <button class="tab-button" data-tab="tip-2">Digital Wallets</button>
+                        <button class="tab-button" data-tab="tip-3">Savings</button>
+                    </div>
+                    
+                    <div id="tip-1" class="tab-content active">
+                        <h3>Smart Mobile Lending</h3>
+                        <p>Mobile lending platforms offer quick access to credit. Always compare interest rates and repayment terms before borrowing. Start with smaller amounts to build your credit history.</p>
+                    </div>
+                    
+                    <div id="tip-2" class="tab-content">
+                        <h3>Secure Digital Wallets</h3>
+                        <p>Digital wallets provide convenience and security. Enable two-factor authentication for extra protection. Keep your login credentials private and monitor transactions regularly.</p>
+                    </div>
+                    
+                    <div id="tip-3" class="tab-content">
+                        <h3>Build Your Savings</h3>
+                        <p>Start by saving 10% of your income. Automate transfers to a separate savings account. Track your progress monthly and gradually increase your savings rate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card">
-        <h3>Recent Transactions</h3>
-        <ul>
-            <li>Groceries – KES 2,000</li>
-            <li>Transport – KES 300</li>
-            <li>Electricity Tokens – KES 500</li>
-            <li>Lunch – KES 150</li>
-        </ul>
-    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Financial Inclusion System. All rights reserved.</p>
+    </footer>
 
-    <div class="card">
-        <h3>Financial Tips</h3>
-        <p>• Track your expenses daily.</p>
-        <p>• Save at least 10% of your income.</p>
-        <p>• Avoid impulse buying.</p>
-        <p>• Set monthly spending limits.</p>
-    </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

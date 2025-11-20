@@ -1,25 +1,77 @@
+index.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>FinTrack - Financial Inclusion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Inclusion System - Learn & Manage Your Finances</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">💰 FinInclusion</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav>
-    <h2>FinTrack</h2>
-    <div>
-        <a href="login.html">Login</a>
-        <a href="register.html" class="btn">Get Started</a>
-    </div>
-</nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Financial Inclusion for Everyone</h1>
+            <p class="hero-subtitle">Learn digital financial skills, manage budgets, and save smarter with our comprehensive platform</p>
+            <div class="hero-buttons">
+                <a href="register.html" class="btn btn-primary">Get Started</a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-    <h1>Manage Your Money Better</h1>
-    <p>Your personal budgeting and financial literacy companion.</p>
-    <a href="register.html" class="cta">Start Now</a>
-</section>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Our Core Topics</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Lending</h3>
+                <p>Access quick loans and credit facilities through your mobile device, designed for financial accessibility</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💳</div>
+                <h3>Digital Wallets</h3>
+                <p>Secure digital payment solutions that make transactions fast, safe, and convenient</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Budgeting & Tracking</h3>
+                <p>Track your expenses in real-time and create personalized budgets to reach your financial goals</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💎</div>
+                <h3>Savings Tips</h3>
+                <p>Expert advice and strategies to build your savings and grow your wealth over time</p>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Ready to Take Control of Your Finances?</h2>
+        <p>Join thousands of users already managing their finances smarter</p>
+        <a href="register.html" class="btn btn-primary">Sign Up Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Financial Inclusion System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

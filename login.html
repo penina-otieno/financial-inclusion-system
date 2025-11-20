@@ -1,27 +1,53 @@
+login.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login - FinTrack</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Financial Inclusion System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">💰 FinInclusion</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+                <li><a href="login.html" class="nav-link active">Login</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<nav>
-    <h2>FinTrack</h2>
-</nav>
+    <div class="form-container">
+        <div class="form-wrapper">
+            <h1>Login to Your Account</h1>
+            <form id="loginForm" class="form">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address *</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                    <span class="error-message" id="loginEmailError"></span>
+                </div>
 
-<form onsubmit="return loginUser()">
-    <h3>Login</h3>
+                <div class="form-group">
+                    <label for="loginPassword">Password *</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <span class="error-message" id="loginPasswordError"></span>
+                </div>
 
-    <label>Email</label>
-    <input type="email" id="loginEmail" required>
+                <button type="submit" class="btn btn-primary btn-full">Login</button>
+            </form>
 
-    <label>Password</label>
-    <input type="password" id="loginPassword" required>
+            <p class="form-footer">Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </div>
 
-    <button type="submit">Login</button>
-</form>
+    <footer class="footer">
+        <p>&copy; 2025 Financial Inclusion System. All rights reserved.</p>
+    </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
