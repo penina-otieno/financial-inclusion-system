@@ -1,4 +1,4 @@
-scripts.js
+
 // Form Validation and Navigation
 document.addEventListener("DOMContentLoaded", () => {
   const registerForm = document.getElementById("registerForm")
